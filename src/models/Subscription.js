@@ -10,3 +10,4 @@ const subscriptionSchema = new mongoose.Schema(
 export default mongoose.model("Subscription", subscriptionSchema);
 
 
+
