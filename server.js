@@ -16,6 +16,7 @@ const mongoUri = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/flipr";
 
 app.use(cors());
 app.use(express.json({ limit: "2mb" }));
+app.use(express.static('public'));
 
 app.get("/", (_req, res) => {
   res.json({ status: "ok", message: "Flipr API running" });
